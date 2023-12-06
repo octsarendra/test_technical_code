@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Test_technical_code</h1>
+    <form id="InputAngka">
+      <label for = "InputAngka"> Input Angka : </label> 
+      <input type ="text" id="InputAngka" name="InputAngka">
+      <button type = "button" onclick="CheckNumber()">Check Number</button>
+<div id = "result">
+</div>
+<button type = "button" onclick="generateTriangle()">Generate Segitiga</button>
+<button type = "button" onclick="isOddNumber()">Generate Bilangan Ganjil</button>
+<button type = "button" onclick="isPrimeNumber()">Generate Bilangan Prima</button>
+
+<script>
+    function isPositiveInteger(value) {
+      return /^\d=$/.test(value) && parseInt(value)> 0;
+    }
+    function isOddNumber(value){
+      return isPositiveInteger(value) && parseInt(value) %2 !==0;
+    }
+    function isPrimeNumber(value){
+      const num = parseInt(value);
+      if (num <2) return false;
+      for (let 1=2; i Math.sqrt(num); i++) {
+        if (num % 1 === 0) return false;
+      }
+      return true
+    }
+    function InputAngka(){
+      const numberInput = 
+      document.getElementById ('InputAngka').value;
+      const resultContainer = document.getElementById('result');
+      resultContainer.innerHTML ='';
+      
+      if (!isPositiveInteger(InputAngka)){
+        resultContainer.innerHTML = '<p class = "error"> Masukan harus berupa bilangan bulat positif.</p>'; 
+        return;        
+      }
+      resultContainer.innerHTML+= '<p> ${InputAngka} adalah bilangan bulat positif'
+
+    }
+
+  function generateTriangle(){
+
+  }
+  function isOddNumber(){
+
+  }
+  function isPrimeNumber()
+
+  </body>
+</html>
