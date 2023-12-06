@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Generator</title>
+</head>
+<body>
+  <form id="numberForm">
+    <label for="inputNumber">Input Number:</label>
+    <input type="number" id="inputNumber" required>
+    <button type="button" onclick="generateTriangle()">Generate Segitiga</button>
+    <button type="button" onclick="generateOddNumbers()">Generate Bilangan Ganjil</button>
+    <button type="button" onclick="generatePrimeNumbers()">Generate Bilangan Prima</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
